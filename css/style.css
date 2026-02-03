@@ -392,55 +392,114 @@ nav ul a:hover::after {
   line-height: 1.6;
 }
 
-/* Gallery Section */
-.gallery {
+/* Officers Section */
+.officers {
   background: rgba(22, 33, 62, 0.5);
 }
 
-.gallery-grid {
+.officers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.gallery-item {
-  aspect-ratio: 1;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.gallery-placeholder {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(233, 69, 96, 0.2), rgba(212, 175, 55, 0.2));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 2px dashed rgba(212, 175, 55, 0.3);
-  border-radius: 15px;
-  transition: transform 0.3s;
-}
-
-.gallery-placeholder:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, rgba(233, 69, 96, 0.3), rgba(212, 175, 55, 0.3));
-}
-
-.gallery-placeholder span {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.gallery-placeholder p {
-  color: var(--text-muted);
-}
-
-.gallery-note {
+.officer-card {
+  background: rgba(26, 26, 46, 0.8);
+  padding: 2rem;
+  border-radius: 20px;
   text-align: center;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.officer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent-gold);
+}
+
+.officer-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.officer-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.officer-role {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), var(--accent-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.officer-card p {
   color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Accomplishments Section */
+.accomplishments-category {
+  margin-bottom: 3rem;
+}
+
+.accomplishments-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-gold);
+}
+
+.accomplishments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.accomplishment-card {
+  background: rgba(26, 26, 46, 0.8);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.accomplishment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent-gold);
+}
+
+.accomplishment-card.highlight {
+  border-color: rgba(233, 69, 96, 0.4);
+  background: linear-gradient(135deg, rgba(233, 69, 96, 0.1), rgba(212, 175, 55, 0.1));
+}
+
+.accomplishment-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.accomplishment-card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.accomplishments-footer {
+  text-align: center;
+  color: var(--accent-gold);
   font-style: italic;
+  margin-top: 2rem;
+  font-size: 1.1rem;
 }
 
 /* Join Section */
