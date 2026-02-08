@@ -424,6 +424,21 @@ nav ul a:hover::after {
   border-color: var(--accent-gold);
 }
 
+.officer-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid rgba(212, 175, 55, 0.4);
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.officer-card:hover .officer-photo {
+  border-color: var(--accent-gold);
+  transform: scale(1.05);
+}
+
 .officer-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
