@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap");
 
 :root {
   --primary: #1a1a2e;
@@ -20,14 +20,17 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background: var(--primary);
   color: var(--text);
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
 }
 
 .container {
@@ -52,7 +55,9 @@ section {
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   border: none;
   cursor: pointer;
 }
@@ -110,7 +115,7 @@ nav.scrolled {
   color: var(--text);
   font-size: 1.5rem;
   font-weight: 700;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .logo-icon {
@@ -132,7 +137,7 @@ nav a {
 }
 
 nav ul a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -165,7 +170,7 @@ nav ul a:hover::after {
 
 .menu-toggle span::before,
 .menu-toggle span::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 3px;
@@ -282,9 +287,19 @@ nav ul a:hover::after {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
-  60% { transform: translateY(-5px); }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 /* Section Styling */
@@ -347,7 +362,7 @@ nav ul a:hover::after {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--accent);
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .stat-label {
@@ -367,7 +382,9 @@ nav ul a:hover::after {
   border-radius: 20px;
   text-align: center;
   border: 1px solid rgba(212, 175, 55, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .pillar-card:hover {
@@ -415,7 +432,9 @@ nav ul a:hover::after {
   border-radius: 20px;
   text-align: center;
   border: 1px solid rgba(212, 175, 55, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .officer-card:hover {
@@ -431,7 +450,9 @@ nav ul a:hover::after {
   object-fit: cover;
   margin-bottom: 1rem;
   border: 3px solid rgba(212, 175, 55, 0.4);
-  transition: border-color 0.3s, transform 0.3s;
+  transition:
+    border-color 0.3s,
+    transform 0.3s;
 }
 
 .officer-card:hover .officer-photo {
@@ -498,7 +519,9 @@ nav ul a:hover::after {
   padding: 1.5rem;
   border-radius: 15px;
   border: 1px solid rgba(212, 175, 55, 0.15);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .accomplishment-card:hover {
@@ -509,14 +532,18 @@ nav ul a:hover::after {
 
 .accomplishment-card.highlight {
   border-color: rgba(233, 69, 96, 0.4);
-  background: linear-gradient(135deg, rgba(233, 69, 96, 0.1), rgba(212, 175, 55, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(233, 69, 96, 0.1),
+    rgba(212, 175, 55, 0.1)
+  );
 }
 
 .accomplishment-card h4 {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
   color: var(--text);
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .accomplishment-card p {
@@ -540,14 +567,16 @@ nav ul a:hover::after {
   gap: 3rem;
 }
 
-.requirements, .join-cta {
+.requirements,
+.join-cta {
   background: rgba(26, 26, 46, 0.8);
   padding: 2.5rem;
   border-radius: 20px;
   border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
-.requirements h3, .join-cta h3 {
+.requirements h3,
+.join-cta h3 {
   color: var(--accent-gold);
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
@@ -570,7 +599,7 @@ nav ul a:hover::after {
 }
 
 .requirements li::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   left: 0;
   color: var(--accent);
@@ -616,7 +645,7 @@ footer {
 }
 
 .footer-brand .logo-text {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   font-weight: 700;
 }
