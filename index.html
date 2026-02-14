@@ -6,9 +6,35 @@
     <title>NAHS | BASIS Phoenix</title>
     <meta
       name="description"
-      content="National Art Honor Society at BASIS Phoenix - Celebrating creativity, scholarship, and artistic excellence."
+      content="National Art Honor Society (NAHS) and National Junior Art Honor Society (NJAHS) at BASIS Phoenix - Celebrating creativity, scholarship, and artistic excellence for grades 6-12."
     />
-    <link rel="icon" href="favicon.svg" />
+
+    <link rel="canonical" href="https://bphxcshs.github.io/nahs-website/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NAHS | BASIS Phoenix" />
+    <meta property="og:title" content="NAHS | BASIS Phoenix" />
+    <meta
+      property="og:description"
+      content="National Art Honor Society (NAHS) and National Junior Art Honor Society (NJAHS) at BASIS Phoenix - Celebrating creativity, scholarship, and artistic excellence for grades 6-12."
+    />
+    <meta property="og:url" content="https://bphxcshs.github.io/nahs-website/" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="NAHS | BASIS Phoenix" />
+    <meta
+      name="twitter:description"
+      content="National Art Honor Society (NAHS) and National Junior Art Honor Society (NJAHS) at BASIS Phoenix - Celebrating creativity, scholarship, and artistic excellence for grades 6-12."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    />
+
+    <link rel="icon" href="images/icons/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -17,11 +43,22 @@
     <nav id="navbar">
       <div class="nav-content">
         <a href="#home" class="logo">
-          <span class="logo-icon">🎨</span>
+          <img
+            src="images/icons/national-art-logo.jpg"
+            alt="National Art Honor Society"
+            class="logo-img logo-img--header"
+            decoding="async"
+          />
           <span class="logo-text">NAHS</span>
         </a>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Toggle menu"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+        >
           <span></span>
         </button>
 
@@ -31,6 +68,7 @@
           <li><a href="#officers">Officers</a></li>
           <li><a href="#accomplishments">Accomplishments</a></li>
           <li><a href="#pillars">Pillars</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#join">Join</a></li>
         </ul>
       </div>
@@ -40,18 +78,40 @@
       <!-- Hero Section -->
       <section id="home" class="hero">
         <div class="hero-content">
-          <h1 class="hero-title">
-            <span class="title-line">National</span>
-            <span class="title-line accent">Art Honor Society</span>
-          </h1>
-          <p class="hero-subtitle">BASIS Phoenix Chapter</p>
-          <p class="hero-description">
-            Fostering artistic excellence, leadership, and a spirit of service
-            among students.
-          </p>
-          <div class="hero-buttons">
-            <a href="#about" class="btn">Learn More</a>
-            <a href="#join" class="btn btn-outline">Join Us</a>
+          <div class="hero-layout">
+            <div class="hero-featured hero-featured--side" aria-label="Featured artwork (left)">
+              <a href="#gallery" class="hero-thumb" aria-label="View gallery (featured image 1)">
+                <img src="images/gallery/11.png" alt="Featured artwork thumbnail 1" loading="eager" decoding="async" />
+              </a>
+              <a href="#gallery" class="hero-thumb" aria-label="View gallery (featured image 2)">
+                <img src="images/gallery/12.png" alt="Featured artwork thumbnail 2" loading="eager" decoding="async" />
+              </a>
+            </div>
+
+            <div class="hero-copy">
+              <h1 class="hero-title">
+                <span class="title-line">National</span>
+                <span class="title-line accent">Art Honor Society</span>
+              </h1>
+              <p class="hero-subtitle">BASIS Phoenix Chapter</p>
+              <p class="hero-description">
+                Fostering artistic excellence, leadership, and a spirit of service
+                among students.
+              </p>
+              <div class="hero-buttons">
+                <a href="#about" class="btn">Learn More</a>
+                <a href="#join" class="btn btn-outline">Join Us</a>
+              </div>
+            </div>
+
+            <div class="hero-featured hero-featured--side" aria-label="Featured artwork (right)">
+              <a href="#gallery" class="hero-thumb" aria-label="View gallery (featured image 3)">
+                <img src="images/gallery/18.png" alt="Featured artwork thumbnail 3" loading="eager" decoding="async" />
+              </a>
+              <a href="#gallery" class="hero-thumb" aria-label="View gallery (featured image 4)">
+                <img src="images/gallery/1.png" alt="Featured artwork thumbnail 4" loading="eager" decoding="async" />
+              </a>
+            </div>
           </div>
         </div>
         <div class="scroll-indicator">
@@ -74,6 +134,7 @@
                 <strong>BASIS Phoenix</strong>
                 brings together talented artists who share a passion for
                 creativity, service, and leadership.
+                We also support the <strong>National Junior Art Honor Society (NJAHS)</strong> for middle school artists.
               </p>
               <p>
                 Our mission is to foster artistic excellence, leadership, and a
@@ -164,8 +225,10 @@
             <div class="officer-card">
               <img
                 src="images/members/tanvi.png"
-                alt="Tanvi"
+                alt="Tanvi — President"
                 class="officer-photo"
+                width="120"
+                height="120"
               />
               <h3>Tanvi</h3>
               <span class="officer-role">President</span>
@@ -184,8 +247,10 @@
             <div class="officer-card">
               <img
                 src="images/members/tanisha.png"
-                alt="Tanisha"
+                alt="Tanisha — Vice President"
                 class="officer-photo"
+                width="120"
+                height="120"
               />
               <h3>Tanisha</h3>
               <span class="officer-role">Vice President</span>
@@ -200,8 +265,10 @@
             <div class="officer-card">
               <img
                 src="images/members/willow.png"
-                alt="Willow"
+                alt="Willow — Treasurer"
                 class="officer-photo"
+                width="120"
+                height="120"
               />
               <h3>Willow</h3>
               <span class="officer-role">Treasurer</span>
@@ -218,8 +285,10 @@
             <div class="officer-card">
               <img
                 src="images/members/soha.png"
-                alt="Soha"
+                alt="Soha — Secretary"
                 class="officer-photo"
+                width="120"
+                height="120"
               />
               <h3>Soha</h3>
               <span class="officer-role">Secretary</span>
@@ -233,8 +302,10 @@
             <div class="officer-card">
               <img
                 src="images/members/aryan.png"
-                alt="Aryan"
+                alt="Aryan — Committee Director"
                 class="officer-photo"
+                width="120"
+                height="120"
               />
               <h3>Aryan</h3>
               <span class="officer-role">Committee Director</span>
@@ -396,6 +467,76 @@
         </div>
       </section>
 
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery">
+        <div class="container">
+          <div class="section-header">
+            <h2>Gallery</h2>
+            <div class="underline"></div>
+          </div>
+
+          <div class="gallery-grid" aria-label="Photo gallery">
+            <figure class="gallery-item">
+              <img src="images/gallery/1.png" alt="NAHS gallery image 1" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/2.png" alt="NAHS gallery image 2" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/3.png" alt="NAHS gallery image 3" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/4.png" alt="NAHS gallery image 4" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/5.png" alt="NAHS gallery image 5" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/6.png" alt="NAHS gallery image 6" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/7.png" alt="NAHS gallery image 7" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/8.png" alt="NAHS gallery image 8" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/9.png" alt="NAHS gallery image 9" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/10.png" alt="NAHS gallery image 10" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/11.png" alt="NAHS gallery image 11" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/12.png" alt="NAHS gallery image 12" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/13.png" alt="NAHS gallery image 13" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/14.png" alt="NAHS gallery image 14" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/15.png" alt="NAHS gallery image 15" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/16.png" alt="NAHS gallery image 16" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/17.png" alt="NAHS gallery image 17" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/18.png" alt="NAHS gallery image 18" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/19.png" alt="NAHS gallery image 19" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <!-- Join Section -->
       <section id="join" class="join">
         <div class="container">
@@ -407,7 +548,7 @@
             <div class="requirements">
               <h3>Membership Requirements</h3>
               <ul>
-                <li>Be in grades 9-12 at BASIS Phoenix</li>
+                <li>Be in grades 6-12 at BASIS Phoenix (NJAHS: 6-8, NAHS: 9-12)</li>
                 <li>Maintain a minimum GPA of 3.25</li>
                 <li>
                   Take any art class in BASIS Phoenix
@@ -421,8 +562,8 @@
             <div class="join-cta">
               <h3>Ready to Apply?</h3>
               <p>
-                Applications open each year. Stay tuned for announcements about
-                the next enrollment period!
+                Applications open each year for both NAHS (high school) and NJAHS (middle school).
+                Stay tuned for announcements about the next enrollment period!
               </p>
             </div>
           </div>
@@ -434,9 +575,15 @@
         <div class="container">
           <div class="footer-content">
             <div class="footer-brand">
-              <span class="logo-icon">🎨</span>
+              <img
+                src="images/icons/national-art-logo.jpg"
+                alt="National Art Honor Society"
+                class="logo-img logo-img--footer"
+                loading="lazy"
+                decoding="async"
+              />
               <span class="logo-text">NAHS</span>
-              <p>BASIS Phoenix Chapter</p>
+              <p>BASIS Phoenix Chapter (NAHS &amp; NJAHS)</p>
             </div>
             <div class="footer-links">
               <a href="#home">Home</a>
@@ -444,6 +591,7 @@
               <a href="#officers">Officers</a>
               <a href="#accomplishments">Accomplishments</a>
               <a href="#pillars">Pillars</a>
+              <a href="#gallery">Gallery</a>
               <a href="#join">Join</a>
             </div>
           </div>
@@ -451,7 +599,57 @@
       </footer>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+      integrity="sha384-CI3ELBVUz9XQO+97x6nwMDPosPR5XvsxW2ua7N1Xeygeh1IxtgqtCkGfQY9WWdHu"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/EffectComposer.js"
+      integrity="sha384-GkidzTYmQg24v13sa3xhBBbvOLbVLO1QxfyKLdOWweQqNqS/iWwUst2T1fER2Xrg"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/RenderPass.js"
+      integrity="sha384-2EpLreWSFuZsk4hcSplXLhlHd/wzvDNF907bTGIXSXM0SlhJNzy4YK0DhBFvkFEs"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/Pass.js"
+      integrity="sha384-HUR8WVDx2FD1OlSm1nohJJ2a3aIfeClGjv/oVFdTHd3skt+4i7/z0dl/ux4nd2ti"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/ShaderPass.js"
+      integrity="sha384-I3lsvPeDJYFrEAzn/TA0yhc/SCYKwpyfyq8lKzHYKohu43H9f7xc/Q9ZWgSVUDl3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/MaskPass.js"
+      integrity="sha384-pG/SGpuNNuluvSd84K35qyRFdMxn8P8MyqIQuxjUb0wPPRgJ7yDLRQT64nLuT8CR"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/three@0.128.0/examples/js/shaders/CopyShader.js"
+      integrity="sha384-nhO9toQuMo5osCuA0l+YFpSqscZWxDu251Bnho2gD3kSPv1neEwHg0LyEmrA+mPj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"
+      integrity="sha384-mY+ii969jnDCI2HjRHftH2NZVkIO5ZGUkcnGCg3oVJ3kVstWQXwerYWBg+nbUG4R"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"
+      integrity="sha384-aVQ2QnWkoxhOefDB0YZB64OPVzujvccydpcC7UqMDJUK0ChwA382zOHmrWHGDRRa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/three@0.128.0/examples/js/shaders/BokehShader.js"
+      integrity="sha384-ufQflaS7ldnoAerv4Ae/zSh0x+XsT1NuWPKIkchXyyOe9cleRUNLqInJVP8gbn/J"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>
