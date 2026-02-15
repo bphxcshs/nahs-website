@@ -22,6 +22,7 @@ body {
   background: var(--primary);
   color: var(--text);
   overflow-x: hidden;
+  background: rgba(26, 26, 46, 0.35);
 }
 
 body.menu-open {
@@ -257,6 +258,12 @@ nav ul a:hover::after {
   text-align: center;
   position: relative;
   padding: 2rem;
+  background: radial-gradient(
+    circle at center,
+    rgba(26, 26, 46, 0.75) 0%,
+    rgba(26, 26, 46, 0.35) 45%,
+    rgba(26, 26, 46, 0) 55%
+  );
 }
 
 /* Subtle readability layer so background never competes with hero text */
@@ -264,12 +271,6 @@ nav ul a:hover::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    circle at center,
-    rgba(26, 26, 46, 0.75) 0%,
-    rgba(26, 26, 46, 0.35) 45%,
-    rgba(26, 26, 46, 0) 75%
-  );
   pointer-events: none;
 }
 
@@ -281,7 +282,10 @@ nav ul a:hover::after {
 
 .hero-layout {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) minmax(520px, 1.4fr) minmax(220px, 1fr);
+  grid-template-columns: minmax(220px, 1fr) minmax(520px, 1.4fr) minmax(
+      220px,
+      1fr
+    );
   gap: 2.5rem;
   align-items: center;
 }
@@ -497,7 +501,6 @@ nav ul a:hover::after {
 
 /* About Section */
 .about {
-  background: rgba(22, 33, 62, 0.5);
 }
 
 .about-content {
@@ -585,7 +588,6 @@ nav ul a:hover::after {
 
 /* Officers Section */
 .officers {
-  background: rgba(22, 33, 62, 0.5);
   min-height: auto;
   padding: 6rem 0;
 }
@@ -743,26 +745,31 @@ nav ul a:hover::after {
 
 /* Gallery Section */
 .gallery {
-  background: rgba(22, 33, 62, 0.5);
   min-height: auto;
   padding: 6rem 0;
 }
 
 .gallery .container {
   width: 100%;
+  height: 100%;
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
+  justify-content: center;
 }
 
 .gallery-item {
+  display: flex;
   background: rgba(26, 26, 46, 0.8);
   border-radius: 16px;
   border: 1px solid rgba(212, 175, 55, 0.15);
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
   transition:
     transform 0.3s,
     box-shadow 0.3s,
@@ -777,8 +784,11 @@ nav ul a:hover::after {
 
 .gallery-item img {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 300px;
+  vertical-align: bottom;
 }
 
 .requirements,
@@ -949,7 +959,8 @@ footer {
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-content {
